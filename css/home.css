@@ -2,6 +2,8 @@ body {
   background: url(../images/fundo.png) no-repeat;
   background-size: 100% 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .sidebar_container {
@@ -46,4 +48,27 @@ body {
 
 .middle_container {
   display: flex;
+  align-items: center;
+}
+
+.middle_container p{
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: #F9F4E5;
+}
+
+.faq{
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+.faq p{
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.faq p a {
+  color: #D38600;
+  text-decoration: none;
+  font-weight: 700;
 }
