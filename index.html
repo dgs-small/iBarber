@@ -13,9 +13,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet"> 
   </head>
   <body>
-    <div class="sidebar_container">
+    <header class="sidebar_container">
       <img
         src="images/iBarber sem fundo.png"
         alt="logo iBarber"
@@ -24,9 +27,19 @@
       <p class="sidebar_m1">Basta alguns cliques para você cortar o cabelo!</p>
       <p class="sidebar_m2">Os melhores barbeiros você encontra aqui.</p>
       <img src="images/navalha.svg" alt="navalha" class="navalha" />
-    </div>
+    </header>
+
     <div class="middle_container">
-      <p>Faça o login:</p>
+      
+      <form>
+        <fieldset>
+          <legend>Faça o login:</legend>
+          <input type="email" name="email" required placeholder="EMAIL">
+          <input type="password" name="senha" required placeholder="SENHA">
+          <button type="submit" name="login">ENTRAR</button>
+        </fieldset>
+        <p>Não tem conta? <a href="escolha_perfil.html">Crie sua conta agora!</a></p>
+      </form>
     </div>
     <div class="faq">
       <p>Algum problema? <a href="faq.html">Clique aqui</a></p>
