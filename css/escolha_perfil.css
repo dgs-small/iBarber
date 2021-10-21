@@ -2,15 +2,45 @@ html,
 body {
   background: url(../images/fundo.png) no-repeat;
   background-size: 100vw 100vh;
-  height: calc(100vh - 214px);
+  height: 100vh;
+
+  font-family: Roboto, sans-serif;
 }
 header {
   background-color: #000000;
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 32.032%;
   border: none;
+  display: inline-block;
 }
+main {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 67.068%;
+}
+main div {
+  position: relative;
+  margin: 15%;
+  width: 500px;
+  height: 87px;
+  text-align: left;
+  
+}
+#main-text {
+  color: #f9f4e5;
+}
+main h1 {
+  font-size: 47px;
+  color: #f9f4e5;
+}
+main div p {
+  font-size: 27px;
+  text-align: left;
+  font-weight: 100;
+}
+
 #logo {
   width: 211px;
   height: 211px;
@@ -19,6 +49,9 @@ header {
 
 ol {
   counter-reset: testeCounter;
+
+  display: flex;
+  flex-direction: column;
 }
 ol li {
   color: #f9f4e5;
@@ -26,10 +59,12 @@ ol li {
   width: 86px;
   height: 33px;
   margin: 0 0 30px 165px;
-  font-family: "Roboto", sans-serif;
   font-weight: medium;
   font-size: 27px;
   counter-increment: testeCounter;
+
+  display: flex;
+  align-items: center;
 }
 .itens p {
   text-transform: uppercase;
@@ -40,7 +75,6 @@ ol li {
 }
 .itens::before {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 
   font-weight: 50;
   content: counter(testeCounter);
@@ -56,4 +90,46 @@ ol li {
   height: 39px;
   border-radius: 50%;
   padding: 3px 0px 0px 0px;
+}
+
+a {
+  color: #d38600;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 597px;
+  height: 143px;
+  margin-top: 39px;
+  margin-bottom: 9px;
+
+  background: #f9f4e5;
+  border-radius: 22px;
+} 
+a .texto-link h1 {
+  font-size: 38px;
+  color: #d38600;
+}
+#link-barber .text-link p {
+  width: 296px;
+  height: 60px;
+  font-size: 25px;
+}
+#link-user .texto-link p {
+  width: 350px;
+  height: 60px;
+  font-size: 25px;
+}
+.tesoura-img {
+  width: 59px;
+  height: 115px;
+  margin-left: 43.21px;
+}
+
+.user-img {
+  width: 67px;
+  height: 99px;
+  margin-left: 60px;
 }
