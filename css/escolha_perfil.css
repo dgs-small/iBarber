@@ -3,28 +3,27 @@ body {
   background: url(../images/fundo.png) no-repeat;
   background-size: 100vw 100vh;
   height: 100vh;
+  width: 100vw;
 
   font-family: Roboto, sans-serif;
+  display: flex;
+
 }
 header {
   background-color: #000000;
-  position: relative;
   height: 100%;
   width: 32.032%;
   border: none;
-  display: inline-block;
 }
 main {
-  display: inline-block;
-  position: absolute;
   height: 100%;
   width: 67.068%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-main div {
-  position: relative;
-  margin: 15%;
-  width: 500px;
-  height: 87px;
+main .container {
+  
   text-align: left;
   
 }
@@ -32,10 +31,13 @@ main div {
   color: #f9f4e5;
 }
 main h1 {
+  
   font-size: 47px;
   color: #f9f4e5;
 }
 main div p {
+  width: 550px;
+  height: 87px;
   font-size: 27px;
   text-align: left;
   font-weight: 100;
@@ -48,7 +50,7 @@ main div p {
 }
 
 ol {
-  counter-reset: testeCounter;
+  counter-reset: counter;
 
   display: flex;
   flex-direction: column;
@@ -61,7 +63,7 @@ ol li {
   margin: 0 0 30px 165px;
   font-weight: medium;
   font-size: 27px;
-  counter-increment: testeCounter;
+  counter-increment: counter;
 
   display: flex;
   align-items: center;
@@ -77,7 +79,7 @@ ol li {
   box-sizing: border-box;
 
   font-weight: 50;
-  content: counter(testeCounter);
+  content: counter(counter);
   right: 100%;
   margin-right: 11px;
   position: absolute;
@@ -112,8 +114,8 @@ a .texto-link h1 {
   font-size: 38px;
   color: #d38600;
 }
-#link-barber .text-link p {
-  width: 296px;
+#link-barber .texto-link p {
+  width: 350px;
   height: 60px;
   font-size: 25px;
 }
@@ -125,11 +127,9 @@ a .texto-link h1 {
 .tesoura-img {
   width: 59px;
   height: 115px;
-  margin-left: 43.21px;
 }
 
 .user-img {
   width: 67px;
   height: 99px;
-  margin-left: 60px;
 }
