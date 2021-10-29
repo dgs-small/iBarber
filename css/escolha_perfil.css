@@ -1,0 +1,135 @@
+html,
+body {
+  background: url(../images/fundo.png) no-repeat;
+  background-size: 100vw 100vh;
+  height: 100vh;
+  width: 100vw;
+
+  font-family: Roboto, sans-serif;
+  display: flex;
+
+}
+header {
+  background-color: #000000;
+  height: 100%;
+  width: 32.032%;
+  border: none;
+}
+main {
+  height: 100%;
+  width: 67.068%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container {
+  
+  text-align: left;
+  
+}
+#main-text {
+  color: #f9f4e5;
+}
+main h1 {
+  
+  font-size: 47px;
+  color: #f9f4e5;
+}
+main div p {
+  width: 550px;
+  height: 87px;
+  font-size: 27px;
+  text-align: left;
+  font-weight: 100;
+}
+
+#logo {
+  width: 211px;
+  height: 211px;
+  margin-left: 15%;
+}
+
+ol {
+  counter-reset: counter;
+
+  display: flex;
+  flex-direction: column;
+}
+ol li {
+  color: #f9f4e5;
+  position: relative;
+  width: 86px;
+  height: 33px;
+  margin: 0 0 30px 165px;
+  font-weight: medium;
+  font-size: 27px;
+  counter-increment: counter;
+
+  display: flex;
+  align-items: center;
+}
+.itens p {
+  text-transform: uppercase;
+  padding-top: 5px;
+}
+#pagina_atual {
+  color: #ffa200;
+}
+.itens::before {
+  box-sizing: border-box;
+
+  font-weight: 50;
+  content: counter(counter);
+  right: 100%;
+  margin-right: 11px;
+  position: absolute;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 110%;
+  border: 2px solid;
+  border-style: line;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  padding: 3px 0px 0px 0px;
+}
+
+a {
+  color: #d38600;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 597px;
+  height: 143px;
+  margin-top: 39px;
+  margin-bottom: 9px;
+
+  background: #f9f4e5;
+  border-radius: 22px;
+} 
+a .texto-link h1 {
+  font-size: 38px;
+  color: #d38600;
+}
+#link-barber .texto-link p {
+  width: 350px;
+  height: 60px;
+  font-size: 25px;
+}
+#link-user .texto-link p {
+  width: 350px;
+  height: 60px;
+  font-size: 25px;
+}
+.tesoura-img {
+  width: 59px;
+  height: 115px;
+}
+
+.user-img {
+  width: 67px;
+  height: 99px;
+}
