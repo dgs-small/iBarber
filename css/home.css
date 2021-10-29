@@ -1,6 +1,6 @@
 :root {
-  --orange: #FFA200;
-  --white: #F9F4E5;
+  --orange: #ffa200;
+  --white: #f9f4e5;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: center;
 }
 
 .sidebar_container {
@@ -28,10 +28,10 @@ body {
 .sidebar_m1 {
   color: var(--white);
   font-family: "Roboto", sans-serif;
-  font: normal normal medium 52px/62px;
+  font-weight: 500;
   margin-bottom: 8%;
   margin-top: 8%;
-  font-size: 38px;
+  font-size: 2.2rem;
   margin-left: 15%;
   margin-right: 5%;
 }
@@ -39,6 +39,7 @@ body {
 .sidebar_m2 {
   color: var(--white);
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
   margin-left: 15%;
   font-size: 18px;
   font-weight: 5px;
@@ -46,16 +47,23 @@ body {
 }
 
 .navalha {
-  width: 40%;
-  height: 29%;
+  width: 50%;
+  height: 36.25%;
   position: absolute;
   right: 0;
+  bottom: 3%;
+}
+
+main {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .middle_container {
-  margin-top: 25%;
-  margin-bottom: 10%;
-  width: 35%;
+  margin-left: 15%;
+  width: 45%;
   height: 330px;
 }
 
@@ -65,57 +73,88 @@ body {
   color: var(--white);
 }
 
-.middle_container form input{
-  width: 95%;
-  padding: 5px 0px;
-  margin-top: 20px;
+.middle_container .input_wrapper {
+  width: 84%;
+  margin: 32px 0 16px;
 }
 
-.middle_container form input::placeholder{
-  color: var(--orange);
-  letter-spacing: 0px;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight:bold;
-  text-align: center;
+.middle_container .input_block {
+  width: 100%;
+  border-bottom: 2px solid #f9f4e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
 }
 
-.middle_container form button{
+.middle_container .input_block:first-child {
+  margin-bottom: 2.8rem;
+}
+
+.middle_container .input_block label {
+  font-family: "Ubuntu", sans-serif;
   color: var(--orange);
-  letter-spacing: 0px;
+  padding-right: 8px;
+  font-size: 1.1rem;
+}
+
+.middle_container .input_block input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--orange);
+  font-size: 1.1rem;
+  text-align: right;
+}
+
+.middle_container .input_block input:focus {
+  border: none;
+  outline: none;
+}
+
+.middle_container .input_block input::placeholder {
+  color: var(--orange);
+}
+
+.middle_container form button {
   font-family: "Roboto", sans-serif;
+  font-size: 1rem;
   font-weight: bold;
-  background: #F9F4E5 0% 0% no-repeat padding-box;
+  color: var(--orange);
+  letter-spacing: 0px;
+  background: #f9f4e5 0% 0% no-repeat padding-box;
   border: none;
   border-radius: 10px;
-  height:40px;
+  height: 40px;
   width: 25%;
   margin: 20px auto;
 }
 
-.middle_container p{
-  color: #FFFFFF;
+.middle_container p {
+  color: #ffffff;
   font-family: "Roboto", regular;
 }
 
-.middle_container p a{
+.middle_container p a {
   color: var(--orange);
   text-decoration: none;
   font: normal normal bold Roboto;
 }
 
-.faq{
-  position: relative;
-  top: -40%; 
+.faq {
+  position: absolute;
+  top: 5%;
   right: 3%;
 }
 
-.faq p{
+.faq p {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
 }
 
 .faq p a {
-  color: #D38600;
+  color: #d38600;
   text-decoration: none;
   font-weight: 700;
 }

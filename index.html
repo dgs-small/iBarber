@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <header class="sidebar_container">
@@ -21,23 +21,31 @@
         alt="logo iBarber"
         class="logo_sidebar"
       />
-      <p class="sidebar_m1">Basta alguns cliques para você cortar o cabelo!</p>
+      <p class="sidebar_m1">Basta alguns cliques para você renovar o visual!</p>
       <p class="sidebar_m2">Os melhores barbeiros você encontra aqui.</p>
-      <img src="images/navalha.svg" alt="navalha" class="navalha" />
+      <img src="images/navalha.svg" alt="navalha" class="navalha"/>
     </header>
 
-    <div class="middle_container">
-      
-      <form>
-        <fieldset>
+    <main>
+      <div class="middle_container">
+        <form>
           <legend>Faça o login:</legend>
-          <input type="email" name="email" required placeholder="EMAIL">
-          <input type="password" name="senha" required placeholder="SENHA">
+
+          <fieldset class="input_wrapper">
+            <div class="input_block">
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" required placeholder="email@example.com" id="email">
+            </div>
+            <div class="input_block">
+              <label for="senha">SENHA</label>
+              <input type="email" name="email" required placeholder="******" id="email" minLength="6">
+            </div>
+          </fieldset>
           <button type="submit" name="login">ENTRAR</button>
-        </fieldset>
-        <p>Não tem conta? <a href="escolha_perfil.html">Crie sua conta agora!</a></p>
-      </form>
-    </div>
+          <p>Não tem conta? <a href="escolha_perfil.html">Crie sua conta agora!</a></p>
+        </form>
+      </div>
+    </main>
     <div class="faq">
       <p>Algum problema? <a href="faq.html">Clique aqui</a></p>
     </div>
