@@ -1,0 +1,80 @@
+body {
+    display: grid;
+    place-items: center;
+    max-height: 375px;
+}
+
+main {
+    background: url(../images/fundo_mobile.svg) no-repeat center/cover;
+    min-height: 812px;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    height: 79vh;
+}
+
+.container {
+    width: 18rem;
+    margin: 10rem auto 0rem;
+    text-align: center;
+}
+
+.logo {
+    width: 215px;
+    margin: 0 auto 3.2rem;
+}
+
+.message1 {
+    font-family: "Roboto", sans-serif;
+    color: hsla(45, 63%, 94%, 1);
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 2.6rem;
+}
+
+.message2 {
+    font-family: "Roboto", sans-serif;
+    color: hsla(45, 63%, 94%, 1);
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+.buttons_container {
+    background: #030B0D;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+
+.login_button, .registration_button {
+    width: 10.4rem;
+    height: 3.2rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    transition: all 0.2s;
+    transition-property: inherit;
+}
+
+.login_button {
+    background: #F9F4E5;
+    color: #FFA200;
+}
+.registration_button {
+    background: hsla(38, 100%, 50%, 1);
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.login_button:hover, .registration_button:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+
