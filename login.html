@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iBarber</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="shortcut icon" href="images/iBarber.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <header class="sidebar_container">
+      <img
+        src="images/iBarber sem fundo.png"
+        alt="logo iBarber"
+        class="logo_sidebar"
+      />
+      <p class="sidebar_m1">Basta alguns cliques para você renovar o visual!</p>
+      <p class="sidebar_m2">Os melhores barbeiros você encontra aqui.</p>
+      <img src="images/navalha.svg" alt="navalha" class="navalha"/>
+    </header>
+
+    <main>
+      <div class="middle_container">
+        <form>
+          <legend>Faça o login:</legend>
+
+          <fieldset class="input_wrapper">
+            <div class="input_block">
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" required placeholder="email@example.com" id="email">
+            </div>
+            <div class="input_block">
+              <label for="senha">SENHA</label>
+              <input type="email" name="email" required placeholder="******" id="email" minLength="6">
+            </div>
+          </fieldset>
+          <button type="submit" name="login">ENTRAR</button>
+          <p>Não tem conta? <a href="escolha_perfil.html">Crie sua conta agora!</a></p>
+        </form>
+      </div>
+    </main>
+    <div class="faq">
+      <p>Algum problema? <a href="faq.html">Clique aqui</a></p>
+    </div>
+  </body>
+</html>
