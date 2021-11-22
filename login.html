@@ -16,30 +16,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet"> 
   </head>
   <body>
-    <header class="sidebar_container">
-      <img
-        src="images/iBarber sem fundo.png"
-        alt="logo iBarber"
-        class="logo_sidebar"
-      />
-      <p class="sidebar_m1">Basta alguns cliques para você renovar o visual!</p>
-      <p class="sidebar_m2">Os melhores barbeiros você encontra aqui.</p>
-      <img src="images/navalha.svg" alt="navalha" class="navalha"/>
-    </header>
 
     <main>
       <div class="middle_container">
         <form>
-          <legend>Faça o login:</legend>
-
           <fieldset class="input_wrapper">
+            <legend>Faça o login:</legend>
             <div class="input_block">
               <label for="email">EMAIL</label>
               <input type="email" name="email" required placeholder="email@example.com" id="email">
             </div>
             <div class="input_block">
               <label for="senha">SENHA</label>
-              <input type="email" name="email" required placeholder="******" id="email" minLength="6">
+              <input type="password" name="email" required placeholder="******" id="email" minLength="6">
             </div>
           </fieldset>
           <button type="submit" name="login">ENTRAR</button>
@@ -47,8 +36,5 @@
         </form>
       </div>
     </main>
-    <div class="faq">
-      <p>Algum problema? <a href="faq.html">Clique aqui</a></p>
-    </div>
   </body>
 </html>
